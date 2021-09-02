@@ -1,0 +1,4 @@
+how to kill process when sshing into the pi
+
+
+pkill -9 -f vinylSong.py
