@@ -1,1 +1,1 @@
-ShazamAPI
+ShazamAPI==0.0.2
