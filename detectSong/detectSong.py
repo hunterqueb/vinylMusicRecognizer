@@ -49,13 +49,13 @@ def detectSongFun():
 
     # 
 
-    mp3_file_content_to_recognize = open('output.wav', 'rb').read()
+    file_content_to_recognize = open('output.wav', 'rb').read()
 
-    shazam = Shazam(mp3_file_content_to_recognize)
+    shazam = Shazam(file_content_to_recognize)
     recognize_generator = shazam.recognizeSong()
 
     try:
-        song = Recognizer.recognize(mp3_file_content_to_recognize)
+        song = Recognizer.recognize(file_content_to_recognize)
         if song is not None:
             is_success = True
         else:
