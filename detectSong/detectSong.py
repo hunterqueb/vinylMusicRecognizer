@@ -9,7 +9,7 @@ def detectSongFun():
 
     chunk = 1024  # Record in chunks of 1024 samples
     sample_format = pyaudio.paInt16  # 16 bits per sample
-    channels = 2
+    channels = 1
     fs = 44100  # Record at 44100 samples per second
     seconds = 7
     filename = "output.wav"
@@ -28,7 +28,7 @@ def detectSongFun():
 
     # Store data in chunks for 3 seconds
     for i in range(0, int(fs / chunk * seconds)):
-        data = stream.read(chunk)
+        data = stream.read(chunk,exception_on_overflow = False)
         frames.append(data)
 
     # Stop and close the stream 

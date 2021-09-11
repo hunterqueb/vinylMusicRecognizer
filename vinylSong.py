@@ -2,6 +2,6 @@ import detectSong
 import time
 
 while True:
-    songPlaying = detectSong.detectSongFunDebug()
+    songPlaying = detectSong.detectSongFun()
     # update the song playing on display
     time.sleep(30)
