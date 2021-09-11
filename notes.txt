@@ -2,3 +2,9 @@ how to kill process when sshing into the pi
 
 
 pkill -9 -f vinylSong.py
+
+
+after first run
+    the mic that i have does not pair well with pi0 need to test if it works well with normal pi
+        it caused the audio recording to sound very strange
+    it takes 2 minutes to get song response from server, so it might not be feasible with my implementation
