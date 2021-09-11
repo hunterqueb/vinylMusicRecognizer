@@ -1,3 +1,6 @@
 sudo apt-get install ffmpeg
 python
 sudo apt-get install python3-pyaudio
+sudo apt-get install libatlas-base-dev
+
+http://tuxradar.com/content/how-it-works-linux-audio-explained
